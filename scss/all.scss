@@ -1,0 +1,53 @@
+@import "reset";
+@import "home-container1";
+@import "home-bg-white";
+@import "home-container2";
+
+// /* outline */
+//  *{
+//     outline:1px solid #fff;
+// } 
+*,*::before,*::after{
+    box-sizing: border-box;
+  }
+
+/* body */
+body{
+    width:100%;
+    margin:10px auto;
+    font-family: 'Noto Sans TC', sans-serif;
+    
+}
+body, a{
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+}
+.container{
+    max-width:1296px;
+    margin: 0 auto;
+}
+
+.bg-white{
+    padding-top: 160px;
+    border-radius: 160px;
+    width: 100%;
+}
+.bg-white, .bg-white a{
+    background-color:#fff;
+    color:#000;
+    text-decoration: none;
+}
+.bg-white span{
+    color:#000;
+}
+@media(max-width:375px) {
+    .container{
+        margin: 0 10px;
+    }
+    .bg-white{
+        padding-top: 80px;
+        border-radius: 20px;
+        margin: 0 10px;
+    }
+}

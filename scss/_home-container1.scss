@@ -1,0 +1,231 @@
+// *{
+//     outline:1px solid #fff;
+// }
+/* body .header */
+.container header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+.logo img{
+    width:188.99px;
+    height:40px;
+}
+.menu ul{
+    display: flex;
+    
+}
+.menu a{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+/* .banner */
+.banner{
+    margin-top: 40px;
+}
+.banner h1{
+    font-size: 120px;
+    line-height: 144px;
+    font-weight: 900;
+    margin-bottom: 60px;
+}
+.banner a{
+    font-size: 20px;
+    line-height: 120%;
+    font-weight: 900;
+    border:1px solid #fff;
+    border-radius: 20px;
+    padding:24px 44px;
+}
+.banner a:hover{
+    background-color: #fff;
+    color: #000;
+}
+.banner-animation{
+    margin-top: 120px; 
+    display: flex;
+    justify-content:flex-end;
+}
+.banner-animation img{
+    width:180px;
+}
+/* .service */
+.service{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 140px;
+}
+.service h2{
+    font-size: 32px;
+    line-height: 38.4px;
+    font-weight: 900;
+}
+.service p{
+    font-size: 48px;
+    line-height: 57.6px;
+    font-weight: 900;
+    margin-bottom: 120px;
+}
+.service-list{
+    display: flex;
+    justify-content: space-between;
+}
+.service-list .list{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border:3px solid #1e1e1e;
+    border-radius: 20px;
+    padding: 60px 0px;
+    width:32%;
+}
+.service-list .list h2,.service-list .list p,.service-list .list img{
+margin: 20px 40px;
+}
+.service-list .list h2{
+    font-size: 32px;
+    line-height: 38.4px;
+    font-weight: 900;
+}
+.service-list .list p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.service-list .list img{
+    width: 88px;
+}
+/* .partner */
+.partner{
+    margin-top: 120px;
+    margin-bottom: 160px;
+}
+.partner .shadow-inset ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* box-shadow: inset 0 0 20px 60px  #000;為甚麼黑色就沒有效果? */
+}
+.partner h2{
+font-size: 32px;
+line-height: 38.4px;
+font-weight: 900;
+margin-bottom: 80px;
+}
+.partner .shadow-inset ul{
+    justify-content: center;
+}
+.partner .shadow-inset ul img{
+    width:160px;
+    height:40px;
+    margin-left: 20px;
+}
+/* .recommend */
+.recommend{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 160px;
+}
+.recommend .recommend-card{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    /* padding: 72px 0px; */
+    width:32%;
+}
+.recommend .recommend-card img{
+width:48px;
+}
+.recommend .recommend-icon{
+    margin:20px 40px;
+}
+.recommend .recommend-icon i img{
+width:16px;
+margin: 0 3px;
+}
+.recommend p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 40px;
+}
+.recommend .recommend-card .card-info{
+display: flex;
+margin: 20px 40px;
+align-items:flex-end;
+}
+.recommend .recommend-card .card-info h3{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    }
+.recommend .recommend-card .card-info img{
+        margin-right: 16px;
+        width:48px;
+        height:48px;
+    }
+ @media(max-width:375px) {
+        .banner h1{
+            margin-right: 111px;
+            font-size: 48px;
+            line-height:57.6px;
+        }
+        .banner-animation{
+            display: flex;
+            justify-content:center;
+        }
+        .banner-animation img{
+            width:104px;
+        }
+        .service h2{
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 24px;
+        }
+        .service p{
+            font-size: 32px;
+            line-height: 48px;
+        }
+        .service .service-list{
+           flex-direction: column;
+        }
+        .service-list .list{
+            width:auto;
+        }
+        .service-list .list h2,.service-list .list p,.service-list .list img{
+        margin: 20px;
+        }
+        .service-list .list h2{
+            font-size: 32px;
+            line-height: 38.4px;
+            font-weight: 900;
+        }
+        .service-list .list p{
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+        }
+        .service-list .list img{
+            width: 88px;
+        }
+        /* .recommend */
+        .recommend{
+            flex-direction: column;
+        }
+        .recommend .recommend-card{
+            width:auto;
+        }
+        .recommend .recommend-icon i img{
+        width:13px;
+        }
+
+                
+        
+            
+            }

@@ -1,0 +1,114 @@
+/* *{
+    outline:1px solid #000;
+} */
+/* .container */
+.container .callToAction{
+    margin: 162px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container .callToAction h2{
+    font-size: 48px;
+    line-height: 57.6px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.container .callToAction a{
+    padding:15px 30px;
+    border:1px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+.container .callToAction a:hover{
+    background-color: #fff;
+    color: #000;
+}
+.container .callToAction span{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 900;
+    margin: 10px;
+}
+/* .container .sitemap */
+.container .sitemap{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+.container .sitemap .sitemap-list a{
+    font-size: 80px;
+    line-height: 96px;
+    font-weight: 900;
+}
+.container .sitemap .sitemap-logo img{
+    height: 40px;
+    width:auto;
+}
+/* .footer */
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 40px auto;
+}
+.footer .contact-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer .contact-info .social ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 80px;
+}
+.footer .contact-info .social li{
+    padding: 0 20px;
+}
+.footer .top a {
+    display: flex;
+    align-items: center;
+}
+.footer .top a .material-symbols-outlined {
+    margin-left: 14px;
+}
+@media(max-width:375px){
+    /* .container */
+.container .callToAction{
+    margin: 160px auto;
+}
+.container .callToAction h2{
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    margin: 0px 72px 40px 72px;
+}
+/* .container .sitemap */
+.container .sitemap{
+    flex-direction: column-reverse;
+}
+.container .sitemap .sitemap-list{
+    margin-top: 40px;
+}
+.container .sitemap .sitemap-list a{
+    font-size: 48px;
+    line-height: 57.6px;
+}
+/* .footer */
+
+.footer .contact-info{
+    align-items: flex-start;
+    flex-direction: column;
+}
+.footer .contact-info .social ul{
+    margin-left: 0px;
+}
+.footer .contact-info .social li{
+    padding: 0 20px;
+}
+}
