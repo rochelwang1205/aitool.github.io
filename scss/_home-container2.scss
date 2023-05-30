@@ -1,6 +1,6 @@
-/* *{
-    outline:1px solid #000;
-} */
+// *{
+//     outline:1px solid #fff;
+// } 
 /* .container */
 .container .callToAction{
     margin: 162px auto;
@@ -46,6 +46,38 @@
     height: 40px;
     width:auto;
 }
+.FAQ{
+    display: flex;
+    margin: 160px auto;
+}
+.FAQ h2{
+    width:40%;
+    font-size: 32px;
+    line-height: 38.4px;
+    font-weight: 900;
+}
+.itms{
+    width:100%;
+}
+.itm{
+    display: flex;
+    border:1px solid #fff;
+    border-radius: 20px;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 24px 20px;
+    margin-bottom: 20px;
+}
+.itm:hover{
+    background-color: rgb(99, 95, 95);
+    cursor: pointer;
+
+}
+.panel{
+    display: none;
+    margin: 20px auto;
+    line-height: 24px;
+}
 /* .footer */
 .footer{
     display: flex;
@@ -57,15 +89,14 @@
     margin: 40px auto;
 }
 .footer .contact-info{
-    display: flex;
-    align-items: center;
+    display:flex;
     justify-content: space-between;
 }
 .footer .contact-info .social ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 80px;
+    margin-left: 10%;
 }
 .footer .contact-info .social li{
     padding: 0 20px;
@@ -99,6 +130,14 @@
     font-size: 48px;
     line-height: 57.6px;
 }
+/* .container .FAQ */
+.FAQ .itm{
+    margin-top: 40px;
+}
+.container .sitemap .sitemap-list a{
+    
+    line-height: 57.6px;
+}
 /* .footer */
 
 .footer .contact-info{
@@ -109,6 +148,14 @@
     margin-left: 0px;
 }
 .footer .contact-info .social li{
-    padding: 0 20px;
+    padding: 0 20px 0 0;
 }
+.top {
+    margin: 0 0 10% -50px;
+    }
+  
+  .social {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
 }

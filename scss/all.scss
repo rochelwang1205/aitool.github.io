@@ -41,6 +41,12 @@ body, a{
 .bg-white span{
     color:#000;
 }
+.gray-line{
+    background-color:#1e1e1e;
+    border: none;
+    height:1px;
+    width:100%;
+}
 @media(max-width:375px) {
     .container{
         margin: 0 10px;
@@ -48,6 +54,6 @@ body, a{
     .bg-white{
         padding-top: 80px;
         border-radius: 20px;
-        margin: 0 10px;
+        margin: 0 auto;
     }
 }
