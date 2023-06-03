@@ -1,0 +1,56 @@
+
+/* body */
+body{
+    width:100%;
+    margin:10px auto;
+    font-family: 'Noto Sans TC', sans-serif;
+    
+}
+body, a{
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+}
+.container{
+    max-width:1320px;
+    margin: 0 auto;
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+.bg-white{
+    padding-top: 160px;
+    border-radius: 160px;
+    width: 100%;
+}
+.bg-white, .bg-white a{
+    background-color:#fff;
+    color:#000;
+    text-decoration: none;
+}
+.bg-white span{
+    color:#000;
+}
+nav .d-none{
+    display: none;
+}
+.itm .d-none{
+    display: none;
+}
+.itm .d-block{
+    display: block;
+}
+@media(max-width:375px) {
+
+    .bg-white{
+        padding-top: 80px;
+        border-radius: 20px;
+        margin: 0 auto;
+    }
+    nav li{
+        display: none;
+    }
+    nav .d-none{
+        display: flex;
+    }
+}
