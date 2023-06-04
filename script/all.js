@@ -1,4 +1,23 @@
-//banner-animation
+//swiper
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 3,
+  spaceBetween: 24,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    },
+    375: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    },
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+
 
 //panel slide
 $(document).ready(function() {
@@ -26,13 +45,4 @@ $(document).ready(function () {
   });
 });
 
-// var swiper = new Swiper('.swiper', {
-//   slidesPerView: 'auto',
-//   spaceBetween: 10,
-//   loop: true,
-//   pagination: {
-//       el: '.swiper-pagination',
-//       clickable: true,
-//   },
-// });
 
