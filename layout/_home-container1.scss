@@ -295,10 +295,12 @@ nav a {
   margin-bottom: 40px;
 }
 /* .recommend */
+.service .swiper{
+  margin-bottom: 160px;
+}
 .service .swiper .recommend {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 160px;
 }
 .service .swiper .recommend .recommend-card {
   display: flex;
@@ -341,7 +343,7 @@ nav a {
   width: 48px;
   height: 48px;
 }
-.service .swiper-pagination.swiper-pagination-bullets {
+.service .swiper-pagination {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -351,18 +353,20 @@ nav a {
 .service .swiper-pagination-bullet {
   background-color: #525252;
   opacity: 1;
+  margin:0 5px;
 }
 
 .service .swiper-pagination-bullet-active {
   width: 12px;
   height: 12px;
   background-color: gray;
+  margin:0 5px;
 }
 
 /* 讓分頁圓點移至下方 */
 .service .swiper-pagination {
   position: static;
-  margin-top: 24px;
+  margin-top: 20px;
 }
 @media (max-width: 375px) {
   .banner h1 {
@@ -390,8 +394,12 @@ nav a {
     font-size: 32px;
     line-height: 48px;
   }
+  .service .service-intro{
+    flex-direction: column;
+  }
   .service .service-list {
     flex-direction: column;
+    margin-bottom: 10px;
   }
   .service-list .list {
     width: auto;
@@ -415,6 +423,9 @@ nav a {
     width: 88px;
   }
   /* .recommend */
+  .service .swiper .recommend .recommend-card{
+    width: 100%;
+  }
   .swiper .recommend .recommend-icon i img {
     width: 13px;
   }
