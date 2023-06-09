@@ -5,6 +5,8 @@ LV.1
 
 repo：https://github.com/rochelwang1205/aitool.github.io
 
+2023/06/09 revised LV.1
+
 2023/05/30 LV.2
 
 2023/05/25 LV.1
