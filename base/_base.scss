@@ -1,19 +1,22 @@
 
 /* body */
 body{
-    width:100%;
     margin:10px auto;
     font-family: 'Noto Sans TC', sans-serif;
-    
-}
-body, a{
     background-color: #000;
     color: #fff;
+}
+a{
     text-decoration: none;
+    color: #fff;
 }
 .container{
     max-width:1320px;
     margin: 0 auto;
+    padding: 0 12px
+}
+main{
+    padding: 0 12px
 }
 .overflow-hidden{
     overflow: hidden;
@@ -31,13 +34,10 @@ body, a{
 .bg-white span{
     color:#000;
 }
-nav .d-none{
+.d-none{
     display: none;
 }
-.itm .d-none{
-    display: none;
-}
-.itm .d-block{
+.d-block{
     display: block;
 }
 @media(max-width:375px) {

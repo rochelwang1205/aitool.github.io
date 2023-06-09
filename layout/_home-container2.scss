@@ -32,7 +32,7 @@
     margin: 10px;
 }
 /* footer */
-footer{
+.footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,7 +41,7 @@ footer{
     font-weight: 400;
     flex-direction: column;
 }
-footer .sitemap{
+.footer .sitemap{
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #fff;
@@ -49,12 +49,12 @@ footer .sitemap{
     padding: 80px 0;
     width: 100%;
 }
-footer .sitemap .sitemap-list a{
+.footer .sitemap .sitemap-list a{
     font-size: 80px;
     line-height: 96px;
     font-weight: 900;
 }
-footer .sitemap .sitemap-logo img{
+.footer .sitemap .sitemap-logo img{
     height: 40px;
     width:auto;
 }
@@ -96,27 +96,66 @@ footer .sitemap .sitemap-logo img{
     margin: 20px auto;
     line-height: 24px;
 }
-footer .contact-info{
+.footer .contact-info{
     width:100%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
-footer .social ul{
+.footer .social{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-footer .social li{
+.footer .social li{
     margin:0 1.5rem;
 }
 
-footer .top a{
+.footer .top {
     display: flex;
     align-items: center;
 }
-footer .top a .material-symbols-outlined {
+.footer .top .material-symbols-outlined {
     margin-left: 14px;
+}
+
+@media(max-width:1024px){
+/* .container .FAQ */
+.FAQ .itm{
+    margin-top: 40px;
+}
+.container .sitemap .sitemap-list a{
+    
+    line-height: 57.6px;
+}
+.partner .list .rule-text{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.partner .list .rule-title{
+    font-size: 32px;
+    line-height: 38.4px;
+    font-weight: 900;
+}
+}
+@media(max-width:768px){
+/* .footer */
+.footer .contact-info{
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer .social{
+    margin-left: 0px;
+}
+.footer  .social li{
+    padding: 0 20px 0 0;
+}
+.social {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+    order:1;
+  }
 }
 @media(max-width:375px){
     /* .container */
@@ -130,13 +169,13 @@ footer .top a .material-symbols-outlined {
     margin: 0px 72px 40px 72px;
 }
 /* footer .sitemap */
-footer .sitemap{
+.footer .sitemap{
     flex-direction: column-reverse;
 }
-footer .sitemap .sitemap-list{
+.footer .sitemap .sitemap-list{
     margin-top: 40px;
 }
-footer .sitemap .sitemap-list a{
+.footer .sitemap .sitemap-list a{
     font-size: 48px;
     line-height: 57.6px;
 }
@@ -159,15 +198,15 @@ footer .sitemap .sitemap-list a{
     font-weight: 900;
 }
 /* .footer */
-footer .contact-info{
+.footer .contact-info{
     align-items: center;
     flex-wrap: wrap;
 }
-.footer .social ul{
+.footer .social{
     margin-left: 0px;
 }
 .footer  .social li{
-    padding: 0 20px 0 0;
+    padding: 0;
 }
 .social {
     flex-basis: 100%;

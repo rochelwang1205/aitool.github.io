@@ -89,13 +89,13 @@ nav a {
 
 @keyframes slideCover {
   0% {
-      transform: translateY(-100%);
+      transform: translateY(110%);
   }
   50% {
       transform: translateY(0);
   }
   100% {
-      transform: translateY(110%);
+      transform: translateY(-100%);
   }
 }
 
@@ -130,6 +130,7 @@ nav a {
 .service-list {
   display: flex;
   justify-content: space-between;
+  gap:10px;
 }
 .service-list .list {
   padding-top: 60px;
@@ -184,7 +185,6 @@ nav a {
 .partner {
   margin-top: 120px;
   margin-bottom: 160px;
-  width: 100%;
 }
 .partner h2 {
   font-size: 32px;
@@ -193,9 +193,6 @@ nav a {
   margin-bottom: 80px;
 }
 .partner .partner-logo {
-  max-width: 1296px;
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -312,33 +309,33 @@ nav a {
   border-radius: 20px;
   width:32%;
 }
-.service .swiper .recommend .recommend-card img {
+.recommend .recommend-card img {
   width: 48px;
 }
-.service .swiper .recommend .recommend-icon {
+.recommend .recommend-icon {
   margin: 20px 40px;
 }
-.service .swiper .recommend .recommend-icon i img {
+.recommend .recommend-icon i img {
   width: 16px;
   margin: 0 3px;
 }
-.service .swiper .recommend p {
+.recommend p {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   margin: 40px;
 }
-.service .swiper .recommend .recommend-card .card-info {
+.recommend .recommend-card .card-info {
   display: flex;
   margin: 20px 40px;
   align-items: flex-end;
 }
-.service .swiper .recommend .recommend-card .card-info h3 {
+.recommend .recommend-card .card-info h3 {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
 }
-.service .swiper .recommend .recommend-card .card-info img {
+.recommend .recommend-card .card-info img {
   margin-right: 16px;
   width: 48px;
   height: 48px;
@@ -368,9 +365,72 @@ nav a {
   position: static;
   margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+  .service .service-intro{
+    flex-direction: column;
+  }
+  .service .service-list {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .service-list .list {
+    width: auto;
+    margin-bottom: 10px;
+  }
+  .service-list .list h2,
+  .service-list .list p,
+  .service-list .list img {
+    margin: 20px;
+  }
+  .service-list .list h2 {
+    font-size: 32px;
+    line-height: 38.4px;
+    font-weight: 900;
+  }
+  .service-list .list p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  .service-list .list img {
+    width: 88px;
+  }
+  /* .recommend */
+  .recommend .recommend-card{
+    width: 100%;
+  }
+  .recommend .recommend-icon i img {
+    width: 13px;
+  }
+  .recommend .recommend-card .card-info h3 {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+  .service .swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+  }
+  
+  .service .swiper-pagination-bullet {
+    background-color: #525252;
+    opacity: 1;
+    margin:0 5px;
+  }
+  .service .swiper-pagination-bullet-active {
+    width: 12px;
+    height: 12px;
+    background-color: gray;
+    margin:0 5px;
+  } 
+}
+
 @media (max-width: 375px) {
   .banner h1 {
-    margin-right: 111px;
+    margin-right: 10%;
     font-size: 48px;
     line-height: 57.6px;
   }
@@ -390,7 +450,7 @@ nav a {
     line-height: 24px;
     margin-bottom: 24px;
   }
-  .service p {
+  .service-intro p {
     font-size: 32px;
     line-height: 48px;
   }
@@ -423,16 +483,31 @@ nav a {
     width: 88px;
   }
   /* .recommend */
-  .service .swiper .recommend .recommend-card{
-    width: 100%;
-  }
-  .swiper .recommend .recommend-icon i img {
+  .recommend .recommend-icon i img {
     width: 13px;
   }
-  .swiper .recommend .recommend-card .card-info h3 {
+  .recommend .recommend-card .card-info h3 {
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
+  }
+  .service .swiper-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+  }
+  
+  .service .swiper-pagination-bullet {
+    background-color: #525252;
+    opacity: 1;
+    margin:0 5px;
+  }
+  .service .swiper-pagination-bullet-active {
+    width: 12px;
+    height: 12px;
+    background-color: gray;
+    margin:0 5px;
   }
 
   

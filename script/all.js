@@ -3,11 +3,19 @@ const swiper = new Swiper('.swiper', {
   slidesPerView: 3,
   spaceBetween: 24,
   breakpoints: {
+    1024: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+    },
     768: {
       slidesPerView: 2,
       slidesPerGroup: 2,
     },
     375: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    },
+    0: {
       slidesPerView: 1,
       slidesPerGroup: 1,
     },
