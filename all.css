@@ -329,6 +329,17 @@ nav a {
   justify-content: space-between;
   border-top: 1px solid #1e1e1e;
   margin-top: 60px;
+  padding: 20px;
+  align-items: center;
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+
+.service-list .list .list-info a {
+  display: flex;
+  align-items: center;
 }
 
 /* .partner */
@@ -1077,6 +1088,10 @@ nav a {
 
 .footer .top .material-symbols-outlined {
   margin-left: 14px;
+}
+
+.d-none {
+  display: none;
 }
 
 @media (max-width: 1024px) {
